@@ -2,6 +2,8 @@ package com.tutorial.userserivice.controller;
 
 import java.util.List;
 
+import com.tutorial.userserivice.model.Bike;
+import com.tutorial.userserivice.model.Car;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -44,5 +46,23 @@ public class UserController {
 	        User userNew = userService.save(user);
 	        return ResponseEntity.ok(userNew);
 	    }
+
+	@GetMapping("/cars/{userId}")
+	public ResponseEntity<List<Car>> getCars(@PathVariable("userId") int userId) {
+		User user = userService.getUserById(userId);
+		if(user == null)
+			return ResponseEntity.notFound().build();
+		List<Car> cars = userService.getCars(userId);
+		return ResponseEntity.ok(cars);
+	}
+
+	@GetMapping("/bikes/{userId}")
+	public ResponseEntity<List<Bike>> getBikes(@PathVariable("userId") int userId) {
+		User user = userService.getUserById(userId);
+		if(user == null)
+			return ResponseEntity.notFound().build();
+		List<Bike> bikes = userService.getBikes(userId);
+		return ResponseEntity.ok(bikes);
+	}
 
 }

@@ -38,8 +38,8 @@ public class CarController {
         return ResponseEntity.ok(carNew);
     }
 
-    @GetMapping("/user/{userid}")
-    public ResponseEntity<List<Car>> getByUserId(@PathVariable("userid" ) int userid){
+    @GetMapping("/byuser/{userId}")
+    public ResponseEntity<List<Car>> getByUserId(@PathVariable("userId" ) int userid){
         List<Car> cars = carService.getCarByUserId(userid);
         if(cars.isEmpty()){
             return ResponseEntity.noContent().build();
