@@ -7,9 +7,9 @@ INDEX VERSION 1.131+C:\Users\Andres\Desktop\Platzi\Desarrollo de software\JAVA\E
 2686100328.index
 3674757972.index
 3832736297.index
-1857772287.index
-1246968960.index
 652248131.index
+1246968960.index
+1857772287.index
 1485534840.index
 3457149748.index
 3493171897.index
@@ -17,9 +17,9 @@ INDEX VERSION 1.131+C:\Users\Andres\Desktop\Platzi\Desarrollo de software\JAVA\E
 4188846764.index
 2226264546.index
 1741637695.index
-1388682085.index
-457531295.index
 2502762507.index
+457531295.index
+1388682085.index
 4234125757.index
 1574621838.index
 901814524.index
@@ -43,8 +43,8 @@ INDEX VERSION 1.131+C:\Users\Andres\Desktop\Platzi\Desarrollo de software\JAVA\E
 443700820.index
 4233705718.index
 1664886800.index
-3451295758.index
 3619558454.index
+3451295758.index
 2428265186.index
 93910086.index
 3320155153.index
