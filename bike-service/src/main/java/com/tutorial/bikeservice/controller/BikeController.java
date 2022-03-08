@@ -34,17 +34,17 @@ public class BikeController {
  }
 
  @PostMapping()
- public ResponseEntity<Bike> save(@RequestBody Bike car){
-  Bike carNew = bikeService.save(car);
+ public ResponseEntity<Bike> save(@RequestBody Bike bike){
+  Bike carNew = bikeService.save(bike);
   return ResponseEntity.ok(carNew);
  }
 
  @GetMapping("/byuser/{userId}")
  public ResponseEntity<List<Bike>> getByUserId(@PathVariable("userId" ) int userid){
   List<Bike> cars = bikeService.getCarByUserId(userid);
-  if(cars.isEmpty()){
+  /*if(cars.isEmpty()){
    return ResponseEntity.noContent().build();
-  }
+  }*/
   return ResponseEntity.ok(cars);
  }
 
